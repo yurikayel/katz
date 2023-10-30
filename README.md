@@ -42,18 +42,16 @@ We welcome contributions! If you want to add new features or fix bugs:
 
 ## License :scroll:
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU License.
 
-MIT License
------------
+### GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-MIT License
-
-This open-source project is licensed under the terms of the MIT License. You can find the full text of the MIT License in the [LICENSE](LICENSE) file.
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
 
 ## Acknowledgments :clap:
 
-- Special thanks to our contributors for their hard work.
-- We use Coil for efficient image loading, and it's fantastic.
+- Special thanks to my cats! 😺🐾
 
-Enjoy the adorable cat images and happy coding! 😺🐾
