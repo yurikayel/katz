@@ -80,5 +80,9 @@ private fun Success.Success() = katz.filter().run {
 @Composable
 private fun List<Kat>.filter(): List<Kat> = filter {
 	it.images.isNotEmpty() &&
-	!it.images[0].link.contains(".gif")
+	it.images[0].link.run {
+		contains(".jpg") ||
+		contains(".jpeg") ||
+		contains(".png")
+	}
 }
