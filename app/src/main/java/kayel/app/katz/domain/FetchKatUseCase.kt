@@ -4,6 +4,7 @@ import kayel.app.katz.data.KatService
 import kayel.app.katz.entity.KatResponse.Kat
 import retrofit2.HttpException
 import java.io.IOException
+import javax.inject.Inject
 
 /**
  * Use case for fetching kat images from the Imgur API.
@@ -12,7 +13,9 @@ import java.io.IOException
  *
  * @property katService The [KatService] instance responsible for fetching kat images.
  */
-class FetchKatUseCase(private val katService: KatService = KatService.instance)
+class FetchKatUseCase @Inject constructor(
+		private val katService: KatService = KatService.instance
+)
 {
 	
 	/**
