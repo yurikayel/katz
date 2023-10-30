@@ -48,6 +48,8 @@ android {
 	}
 	
 	packagingOptions {
+		@Suppress("DEPRECATION")
+		exclude("META-INF/gradle/incremental.annotation.processors")
 		resources.excludes.add("META-INF/*")
 	}
 	buildToolsVersion = "34.0.0"
@@ -100,6 +102,10 @@ dependencies {
 	implementation("$mockk:mockk:1.13.8")
 	
 	implementation("com.google.android.engage:engage-core:1.3.1")
+	
+	implementation("com.google.dagger:hilt-android:2.48.1")
+	
+	implementation("com.google.dagger:hilt-compiler:2.39")
 	
 	testImplementation("junit:junit:4.13.2")
 	testImplementation("io.mockk:mockk:1.13.8")
