@@ -11,17 +11,17 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import javax.inject.Inject
 
 /**
  * ViewModel class responsible for managing the UI-related data of the Katz feature.
  *
  * @param useCase The use case responsible for fetching kat images.
  */
-class KatzViewModel(
+class KatzViewModel @Inject constructor(
 		private val useCase: FetchKatUseCase = FetchKatUseCase()
 ) : ViewModel()
 {
-	
 	init
 	{
 		fetchCatImages()
